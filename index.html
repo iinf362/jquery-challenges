@@ -11,6 +11,7 @@
 <body>
   <div class="container">
   <h1>jQuery Challenges</h1>
+  <button id="menu" class="btn-menu">Menu</button>
     <ul class="nav-main nav">
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
@@ -32,7 +33,7 @@
     </div>
   </div>
 
-  <ul class="nav nav-internal">
+  <ul class="nav nav-internal" id="sticky">
     <li><a href="#section-1">Section 1</a></li>
     <li><a href="#section-2">Section 2</a></li>
     <li><a href="#section-3">Section 3</a></li>
@@ -48,5 +49,16 @@
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/sticky.js"></script>
+  <script>
+  $(document).ready(function(){
+    $("#sticky").sticky({
+      topSpacing:0,
+      responsiveWidth: false
+      });
+  });
+  </script>
 </body>
 </html>
